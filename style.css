@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Gan of Three';
+    src: url('fonts/go3v2.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+    font-family: 'Gan of Three';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url(./back.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.load, .load-2 {
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    transform: scale(1);
+    display: block;
+    transition: all 0.5s linear;
+    z-index: 1000;
+}
+
+.load-2 {
+    transform: scale(0);
+    position: absolute;
+    border-radius: 50%;
+    background: url(images/backdrops/start\ back.jpeg);
+    padding-top: 20rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.loader, .loader-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    background: url(./images/backdrops/start\ back.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.loader .loader-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -350px;
+    background: url(./images/backdrops/start.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50vw;
+    position: relative;
+    animation: front 10s linear infinite;z-index: 1000;
+}
+
+@keyframes front {
+    0% {
+        top: -350px;
+        left: 0;
+    }
+    20% {
+        top: -250px;
+        left: 100px;
+    }
+    40% {
+        top: -450px;
+        left: 100px;
+    }
+    60% {
+        top: -250px;
+        left: -100px;
+    }
+    80% {
+        top: -450px;
+        left: -100px;
+    }
+    100% {
+        top: -350px;
+        left: 0;
+    }
+}
+
+#mouse {
+    position: absolute;
+    width: 100px;
+    transform: rotate(105deg);
+    transition: all .05s linear;
+}
+
+img {
+    position: absolute;
+}
+
+.audio-files {
+    opacity: 0;
+}
+
+.bx {
+    color: rgb(255, 37, 48);
+    position: absolute;
+    font-size: 3.5rem;
+}
+
+#one {
+    top: 10px;
+    right: 140px;
+}
+
+#two {
+    top: 10px;
+    right: 80px;
+}
+
+#three {
+    top: 10px;
+    right: 20px;
+}
+
+#counter {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    letter-spacing: 2%;
+    color: rgb(255, 196, 35);
+}
+
+#timer {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    color: rgb(255, 196, 35);
+    z-index: 1001;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#easy img {
+    width: 100%;
+}
+
+.mod {
+    width: 120px;
+    position: relative;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rot 1.2s linear infinite;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.fruit-cont {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid;
+    border-radius: 50%;
+}
+
+.fruit-cont:nth-child(1) {
+    border-color: rgb(255, 196, 35);
+}
+
+.fruit-cont:nth-child(2) {
+    border-color: rgb(255, 37, 48);
+}
+
+.fruit-cont:nth-child(3) {
+    border-color: rgb(60, 230, 17);
+}
+
+.fruit-cont:nth-child(2) img {
+    width: 85%;
+    padding-right: 10px;
+}
+
+.fruit-cont:nth-child(3) img {
+    width: 110%;
+}

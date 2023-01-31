@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Fruit Ninja</title>
+</head>
+
+<body class="body">
+
+    <div class="line">
+        <div class="fruit-cont"><div id="easy" class="mod"><img src="images/fruits/4.png" alt=""></div></div>
+        <div class="fruit-cont"><div id="hard" class="mod"><img src="images/fruits/7.png" width="70px" alt=""></div>  </div>  
+        <div class="fruit-cont"><div id="medium" class="mod"><img src="images/fruits/5.png" alt=""></div></div>
+    </div>
+
+    <i class='bx bxs-heart' id='one'></i>
+    <i class='bx bxs-heart' id="two"></i>
+    <i class='bx bxs-heart' id="three"></i>
+
+
+
+    <img src="./mouse.png" id="mouse">
+
+    <div class="audio-files">
+        <audio id="end" src="audio/Game-over.mp3"></audio>
+        <audio id="leave" src="audio/Clean-Slice-3.mp3"></audio>
+        <audio id="splatter" src="audio/Splatter-Medium-1.mp3"></audio>
+        <audio id="start" src="audio/Game-start.mp3"></audio>
+        <audio id="boom" src="audio/blade-dragon-swipe-8.mp3"></audio>
+    </div>
+
+
+    <div class="load">
+        <div class="loader">
+            <div class="loader-front"></div>
+        </div>
+    </div>
+
+    <div class="load-2">
+        <div class="loader"></div>
+    </div>
+
+
+    <div id="counter"></div>
+
+    <div id="timer"></div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
